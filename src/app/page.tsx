@@ -30,7 +30,7 @@ export default function Home() {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState<Array<string>>([]);
 
-  const handleClick = (e: React.ChangeEvent, searchTerm: string) => {
+  const handleClick = (e: React.MouseEvent, searchTerm: string) => {
     e.preventDefault();
     botConnection
       .postActivity({
